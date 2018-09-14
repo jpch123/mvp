@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="DEMO1 简单的mvp结构\r\n
+        DEMO2 抽取公共部分到base的mvp结构\r\n
+        DEMO3 优化M层的mvp
+"/>
+
+
+    <Button android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DEMO1"
+        android:onClick="getData"
+        />
+
+    <Button android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DEMO2"
+        android:onClick="getDataForFailure"
+        />
+
+    <Button android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DEMO3"
+        android:onClick="getDataForError"
+        />
+
+</LinearLayout>
